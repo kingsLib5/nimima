@@ -106,7 +106,7 @@ const Slideshow = () => {
           </div>
         </div>
 
-        <div className="relative min-h-[500px] md:min-h-[135vh] flex flex-col" aria-live="polite">
+        <div className="relative min-h-[500px] md:min-h-[140vh] flex flex-col" aria-live="polite">
           <AnimatePresence mode="wait">
             <motion.div key={currentSlide} initial={{ opacity: 0, x: 100 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -100 }} transition={{ duration: 0.5, ease: 'easeOut' }} className="flex-grow flex flex-col items-center justify-center p-6 md:p-10 text-center relative z-10">
               <div className="w-full flex justify-between items-center mb-6">
