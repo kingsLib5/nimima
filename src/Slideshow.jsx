@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-import nimimaLogo       from './assets/nim13.jpg';
+import nimimaLogo       from './assets/nim15.jpg';
 import formalLetter     from './assets/nim6.jpg';
 import nigerianIndustry from './assets/nim5.jpg';
 import stakeholders     from'./assets/nim4.jpg';
@@ -14,6 +14,7 @@ import economicGrowth   from './assets/nim11.jpg';
 import industrySuccess  from './assets/nim12.jpg';
 import collaboration    from './assets/nim9.jpg';
 import conceptNote      from './assets/nim10.jpg';
+import mediaPartners      from './assets/nim16.jpg';
 import thankYou         from './assets/nim14.jpg';
 
 const Slideshow = () => {
@@ -141,12 +142,15 @@ const Slideshow = () => {
       title: "Media Partners",
       content: "",
       items: [
-        "The Eddys Award",
-        "Rotary Club of Nigeria Award",
-        "Catholic Archdiocese of Lagos Award",
-        "NIMAA Award"
+        "THE GUARDIAN NEWS PAPER",
+        "SILVER BIRD TV",
+        "LAGOS TELEVISION",
+        "WAZOBIA FM",
+        "hip TV",
+        "Galaxy tv",
+
       ],
-      image: awardCeremony,
+      image: mediaPartners,
       type: "list"
     },
     {
