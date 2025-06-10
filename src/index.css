@@ -1,2 +1,47 @@
 @import "tailwindcss";
 
+/* 1. Make all of your fixed‐height containers shrink on small screens */
+@media (max-width: 768px) {
+  /* Target your slide’s containers that you made scrollable */
+  .min-h-\[500px\],
+  .md\:min-h-\[165vh\] {
+    min-height: auto !important;
+    max-height: calc(100vh - 120px) !important;
+    overflow-y: auto !important;
+    /* give plenty of bottom padding so content stops above the buttons */
+    padding-bottom: 8rem !important;
+  }
+}
+
+/* 2. Scale down your text & headings on smaller breakpoints */
+@media (max-width: 768px) {
+  .text-4xl { font-size: 1.75rem !important; }
+  .md\:text-3xl { font-size: 1.5rem !important; }
+  .md\:text-2xl { font-size: 1.25rem !important; }
+}
+
+/* 3. Make images automatically fill the width of their container */
+img {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: cover;
+}
+
+/* 4. Limit the maximum slide width and center it on very large screens */
+@media (min-width: 1536px) {
+  .max-w-6xl { max-width: 80% !important; }
+}
+
+/* 5. Ensure the “glass” backdrops aren’t too intense on mobile */
+@media (max-width: 640px) {
+  .backdrop-blur-sm { backdrop-filter: blur(4px) !important; }
+}
+
+/* 6. On small screens, flow the button bar below the slide content */
+@media (max-width: 768px) {
+  /* Target your absolute‐positioned control container */
+  .absolute.bottom-0.left-0.right-0 {
+    position: static !important;
+    margin-top: 1rem !important; /* space between content and buttons */
+  }
+}
