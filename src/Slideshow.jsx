@@ -159,8 +159,8 @@ const Slideshow = () => {
       content: "Thank you for your continued support of initiatives that promote local enterprise, economic empowerment, and national development.",
       image: thankYou,
       type: "closing",
-      signature: "[Your Full Name]",
-      position: "[Your Position]",
+      signature: "Enyirim Jude C.",
+      position: "For ENQIRIES & PARTICIPATION CONTACT : 08111900866 or 07025496927",
       company: "Broadway Media Entertainment"
     }
   ];
